@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  padding: var(--page-padding-top) var(--page-padding-right) var(--page-padding-bottom) var(--page-padding-left);
+  max-width: var(--page-max-width);
+}
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.conteiner_content {
+  display: flex;
+  flex-direction: column;
+  width: 426px;
+  text-align: center;
+  gap: 20px;
+}
+
+.link {
+  color: var(--link-clr);
+}
+
+.btn {
+  margin: 0 20px;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+@media screen and (max-width: 480px) {
+
+}

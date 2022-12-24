@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #888;
+  gap: 10px;
+}
+
+.adsList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.adsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #888;
+  padding: 10px;
+  height: 300px;
+  background: #f0f0f0;
+  gap: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    display: none;
+  }
+}

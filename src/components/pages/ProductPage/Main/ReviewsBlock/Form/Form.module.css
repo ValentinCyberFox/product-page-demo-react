@@ -1,0 +1,138 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 0 0 0 170px;
+  gap: 15px;
+}
+
+.formTitle {
+  font-weight: var(--font-weight-b);
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.inputs input {
+  border: 1px solid #888;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.formInputRaiting {
+  width: 175px;
+}
+
+textarea {
+  overflow: auto;
+  outline: none;
+  border: none;
+}
+
+.inputs input:hover,
+.inputs input:focus,
+.textarea textarea:hover,
+.textarea textarea:focus {
+  border: 1px solid #000;
+  background-color: #fff;
+  transition: background-color 0.2s;
+}
+
+.formInputName {
+  flex: 1;
+}
+
+.formInputErrorName::after {
+  content: "Вы забыли указать имя и фамилию";
+  display: flex;
+  padding: 8px 20px;
+  font-size: calc(12rem / var(--font-size-maket));
+  color: #fff;
+  background: var(--main-btn-clr-hover);
+}
+
+.formInputErrorName input,
+.formInputErrorNameLenght input,
+.formInputErrorRaiting input {
+  border: 1px solid var(--main-btn-clr);
+}
+
+.formInputErrorNameLenght::after {
+  content: "Имя должно содержать не менее 2-х символов";
+  display: flex;
+  padding: 8px 20px;
+  font-size: calc(12rem / var(--font-size-maket));
+  color: #fff;
+  background: var(--main-btn-clr-hover);
+}
+
+.formInputErrorRaiting::after {
+  content: "Оценка должна быть от 1 до 5";
+  display: flex;
+  padding: 8px 20px;
+  font-size: calc(12rem / var(--font-size-maket));
+  color: #fff;
+  background: var(--main-btn-clr-hover);
+}
+
+.textarea {
+  display: flex;
+  gap: 40px;
+}
+
+.textarea textarea {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #888;
+  padding: 15px 20px;
+  width: 100%;
+  min-height: 190px;
+  resize: none;
+}
+
+.btnSubmit {
+  display: flex;
+  gap: 40px;
+}
+
+.btnSubmit button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #fff;
+  background: var(--main-btn-clr);
+  gap: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .form {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form form {
+    margin-top: 0;
+    gap: 15px;
+  }
+
+  .inputs {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .formInputRaiting {
+    width: 100%;
+  }
+}

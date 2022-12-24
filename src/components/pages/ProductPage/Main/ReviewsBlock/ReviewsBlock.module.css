@@ -1,0 +1,130 @@
+.reviewBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+
+.titleBlock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titles {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.titleText {
+  font-weight: var(--font-weight-b);
+  font-size: calc(24rem / var(--font-size-maket));
+}
+
+.titleCount {
+  font-weight: var(--font-weight-b);
+  font-size: calc(24rem / var(--font-size-maket));
+  color: #888;
+}
+
+.reviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.reviewItem {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.authorImg img {
+  border-radius: 100px;
+  height: 140px;
+  min-width: 140px;
+  background-color: #888;
+}
+
+.reviewContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.reviewHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  font-weight: var(--font-weight-b);
+  font-size: calc(20rem / var(--font-size-maket));
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.infoTitle {
+  font-weight: var(--font-weight-b);
+  font-size: calc(14rem / var(--font-size-maket));
+}
+
+.infoTitle span,
+.infoTitleContent {
+  font-weight: var(--font-weight-s);
+}
+
+.hr {
+  margin-top: 40px;
+  border-bottom: 1px dashed #888;
+}
+
+@media screen and (max-width: 480px) {
+  .titleText,
+  .titleCount {
+    font-size: calc(20rem / var(--font-size-maket));
+  }
+
+  .authorImg img {
+    height: 60px;
+    min-width: 60px;
+    background-color: #888;
+  }
+
+  .reviewBlock {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .info {
+    position: relative;
+    right: 98px;
+    padding: 0 8px;
+    width: 129%;
+    max-width: 480px;
+  }
+
+  .hr {
+    margin-top: 30px;
+  }
+
+  .reviewList {
+    gap: 30px;
+  }
+
+  .reviewItems {
+    gap: 15px;
+  }
+
+  .raiting img {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,13 @@
+.gallary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.gallary_img img {
+  height: 100%;
+  max-width: 100%;
+  max-height: 333px;
+}
