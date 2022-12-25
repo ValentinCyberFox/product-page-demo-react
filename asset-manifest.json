@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/product-page-demo-react/static/css/main.14d501b5.css",
-    "main.js": "/product-page-demo-react/static/js/main.ce7468b1.js",
+    "main.css": "/product-page-demo-react/static/css/main.5c9cbc14.css",
+    "main.js": "/product-page-demo-react/static/js/main.eb42a02b.js",
     "static/js/787.a737899b.chunk.js": "/product-page-demo-react/static/js/787.a737899b.chunk.js",
     "static/media/4.webp": "/product-page-demo-react/static/media/4.457641a185bac8fdc51e.webp",
     "static/media/review-2.jpeg": "/product-page-demo-react/static/media/review-2.c6ff911b55e3a5e43b33.jpeg",
@@ -19,12 +19,12 @@
     "static/media/logoshop.svg": "/product-page-demo-react/static/media/logoshop.e211dbbcca9fbc0b1e1811ebbfb07485.svg",
     "index.html": "/product-page-demo-react/index.html",
     "static/media/header-favorite.svg": "/product-page-demo-react/static/media/header-favorite.b06d3dc510e4d078697b45c43c44ebff.svg",
-    "main.14d501b5.css.map": "/product-page-demo-react/static/css/main.14d501b5.css.map",
-    "main.ce7468b1.js.map": "/product-page-demo-react/static/js/main.ce7468b1.js.map",
+    "main.5c9cbc14.css.map": "/product-page-demo-react/static/css/main.5c9cbc14.css.map",
+    "main.eb42a02b.js.map": "/product-page-demo-react/static/js/main.eb42a02b.js.map",
     "787.a737899b.chunk.js.map": "/product-page-demo-react/static/js/787.a737899b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14d501b5.css",
-    "static/js/main.ce7468b1.js"
+    "static/css/main.5c9cbc14.css",
+    "static/js/main.eb42a02b.js"
   ]
 }
