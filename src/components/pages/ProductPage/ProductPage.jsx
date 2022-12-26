@@ -5,9 +5,9 @@ import Main from './Main/Main'
 
 const ProductPage = (props) => {
   return (<>
-      <Nav />
-      <Main />
-      </>
+    <Nav />
+    <Main />
+  </>
   )
 }
 

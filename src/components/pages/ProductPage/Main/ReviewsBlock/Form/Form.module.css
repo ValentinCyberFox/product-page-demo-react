@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-top: 20px;
   padding: 0 0 0 170px;
+  max-width: 710px;
   gap: 15px;
 }
 
@@ -29,6 +30,7 @@
 }
 
 .formInputRaiting {
+  position: relative;
   width: 175px;
 }
 
@@ -48,13 +50,17 @@ textarea {
 }
 
 .formInputName {
+  position: relative;
   flex: 1;
 }
 
 .formInputErrorName::after {
   content: "Вы забыли указать имя и фамилию";
+  position: absolute;
+  z-index: 100;
   display: flex;
   padding: 8px 20px;
+  width: 100%;
   font-size: calc(12rem / var(--font-size-maket));
   color: #fff;
   background: var(--main-btn-clr-hover);
@@ -68,8 +74,11 @@ textarea {
 
 .formInputErrorNameLenght::after {
   content: "Имя должно содержать не менее 2-х символов";
+  position: absolute;
+  z-index: 100;
   display: flex;
   padding: 8px 20px;
+  width: 100%;
   font-size: calc(12rem / var(--font-size-maket));
   color: #fff;
   background: var(--main-btn-clr-hover);
@@ -77,8 +86,11 @@ textarea {
 
 .formInputErrorRaiting::after {
   content: "Оценка должна быть от 1 до 5";
+  position: absolute;
+  z-index: 100;
   display: flex;
   padding: 8px 20px;
+  width: 100%;
   font-size: calc(12rem / var(--font-size-maket));
   color: #fff;
   background: var(--main-btn-clr-hover);

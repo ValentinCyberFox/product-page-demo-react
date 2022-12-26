@@ -32,29 +32,47 @@
   --page-padding-left: 50px;
 }
 
-html {
+html,
+body {
+  height: 100%;
   font-family: "Inter";
   font-weight: var(--font-weight-m);
   font-style: var(--font-style-normal);
   font-size: var(--font-size-maket) px;
   line-height: 1.21;
+  background-color: var(--main-clr-background);
   scroll-behavior: smooth;
 }
 
-body {
+#root {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
   background-color: var(--main-clr-background);
 }
 
-.wrapper {
+.container {
+  margin: 0 auto;
+  padding: var(--page-padding-top) var(--page-padding-right) var(--page-padding-bottom) var(--page-padding-left);
+  max-width: var(--page-max-width);
+}
+
+main {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: var(--main-clr-background);
+  flex: 1 1 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --page-padding-right: 15px;
+    --page-padding-left: 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   :root {
-    --page-padding-right: 8px;
-    --page-padding-left: 8px;
+    --page-padding-right: 10px;
+    --page-padding-left: 10px;
   }
 }

@@ -1,7 +1,6 @@
 import style from './Characteristic.module.css'
 import { ProductCharacteristics } from '../../../../../data/appleIphone13/productСharacteristics'
 import TableCharacterictics from './Table/Table'
-import ReviewBlock from '../ReviewsBlock/ReviewsBlock'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { changeProductColor, changeProductMemory } from '../../../../../redux/reducers/productColorReducer'
@@ -127,7 +126,6 @@ function Characteristic() {
         </h3>
         <TableCharacterictics />
       </div>
-      <ReviewBlock />
     </div>
   </>);
 }

@@ -4,6 +4,7 @@ import { productDescription } from '../../../../data/appleIphone13/productDescri
 import ProductPageGallary from './ProductPageGallary/ProductPageGallary';
 import Characteristic from './Characteristic/Characteristic'
 import Sidebar from './Sidebar/Sidebar';
+import ReviewBlock from './ReviewsBlock/ReviewsBlock';
 
 function Main() {
 
@@ -17,6 +18,7 @@ function Main() {
         <Characteristic />
         <Sidebar />
       </div>
+      <ReviewBlock />
     </main>
   </>);
 }

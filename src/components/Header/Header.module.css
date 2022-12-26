@@ -1,9 +1,3 @@
-.container {
-  margin: 0 auto;
-  padding: var(--page-padding-top) var(--page-padding-right) var(--page-padding-bottom) var(--page-padding-left);
-  max-width: var(--page-max-width);
-}
-
 .header {
   display: flex;
   align-items: center;

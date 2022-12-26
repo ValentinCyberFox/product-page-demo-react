@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: 360px;
+  min-width: 420px;
   gap: 40px;
 }
 
@@ -60,6 +60,10 @@
   height: 30px;
 }
 
+.favoriteImg img {
+  width: 30px;
+}
+
 .favoriteImg:hover {
   filter: invert(40%) sepia(96%) saturate(1151%) hue-rotate(347deg) brightness(97%) contrast(96%);
 }
@@ -102,10 +106,12 @@
 @media screen and (max-width: 480px) {
   .sidebar {
     order: -1;
+    min-width: 340px;
     gap: 0;
   }
 
   .buttonSidebar {
+    height: 54px;
     font-size: calc(16rem / var(--font-size-maket));
   }
 }

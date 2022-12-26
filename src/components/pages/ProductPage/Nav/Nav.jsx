@@ -6,7 +6,6 @@ import { breadcrumbsLinks} from './breadcrumbsLinks'
 function Nav() {
   return (<>
     <nav className={style.nav}>
-    <div className={style.container}>
         <ul className={style.breadcrumbs__list}>
           {breadcrumbsLinks.map(items => {
             return (
@@ -15,7 +14,6 @@ function Nav() {
             </li>
           )})}
         </ul>
-      </div>
     </nav>
   </>);
 }

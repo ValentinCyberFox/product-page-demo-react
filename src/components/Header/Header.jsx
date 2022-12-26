@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={`${style.header} ${style.container}`}>
+      <div className={`${style.header} ${style.container}`} >
         <Link to={'/'}>
           <div className={style.logo}>
             <div className={style.logoImg}>
@@ -46,7 +46,7 @@ const Header = () => {
           </div>
 
         </div>
-      </header>
+      </div>
     </>
   )
 }

@@ -47,7 +47,7 @@ function Sidebar() {
         <div className={style.header}>
           <div className={style.cost}>
             <div className={style.oldCoast}>
-              <span className={style.oldCoasText}>{productDescription.cost}</span>
+              <span className={style.oldCoasText}>{productDescription.cost}₽</span>
               <span className={style.sale}>
                 -{productDescription.sale}%
               </span>

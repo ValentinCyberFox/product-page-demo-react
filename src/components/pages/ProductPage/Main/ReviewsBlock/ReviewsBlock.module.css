@@ -31,6 +31,7 @@
 .reviewList {
   display: flex;
   flex-direction: column;
+  max-width: 880px;
   gap: 40px;
 }
 
@@ -42,8 +43,8 @@
 
 .authorImg img {
   border-radius: 100px;
+  width: 140px;
   height: 140px;
-  min-width: 140px;
   background-color: #888;
 }
 
@@ -86,6 +87,20 @@
   border-bottom: 1px dashed #888;
 }
 
+@media screen and (max-width: 1024px) {
+  .authorImg img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .reviewList {
+    display: flex;
+    flex-direction: column;
+    max-width: 590px;
+    gap: 40px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .titleText,
   .titleCount {
@@ -93,8 +108,8 @@
   }
 
   .authorImg img {
+    width: 60px;
     height: 60px;
-    min-width: 60px;
     background-color: #888;
   }
 
@@ -105,9 +120,9 @@
 
   .info {
     position: relative;
-    right: 98px;
+    right: 82px;
     padding: 0 8px;
-    width: 129%;
+    width: 125%;
     max-width: 480px;
   }
 
@@ -115,11 +130,7 @@
     margin-top: 30px;
   }
 
-  .reviewList {
-    gap: 30px;
-  }
-
-  .reviewItems {
+  .reviewItem {
     gap: 15px;
   }
 

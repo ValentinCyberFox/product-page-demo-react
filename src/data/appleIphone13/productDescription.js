@@ -8,7 +8,7 @@ let newCost = Math.trunc(cost - (cost * sale / 100)).toLocaleString()
 export const productDescription = {
   id: 2342562,
   productName: 'Смартфон Apple iPhone 13',
-  cost,
+  cost: Math.trunc(cost).toLocaleString(),
   sale,
   newCost
 }

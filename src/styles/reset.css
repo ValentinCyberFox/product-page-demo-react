@@ -28,6 +28,7 @@ a:link,
 a:visited {
   text-decoration: none;
   color: var(--link-clr);
+
   /* display: inline-block; */
 }
 
@@ -69,8 +70,8 @@ img {
 
 img,
 svg {
+  width: 100%;
   height: auto;
-  max-width: 100%;
 }
 
 address {
